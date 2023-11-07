@@ -10,7 +10,6 @@ python = "^3.10"
 fastapi = "0.104.1"
 uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 python-multipart = "^0.0.6"
-basemodel = "^20190604.1625"
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 
