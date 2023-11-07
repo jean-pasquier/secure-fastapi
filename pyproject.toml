@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fast-api-secure"
+version = "0.1.0"
+description = "OAuth FastAPI"
+authors = ["Jean Pasquier <jpasquier75@hotmail.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+python-multipart = "^0.0.6"
+basemodel = "^20190604.1625"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.4"
+
+
+[tool.ruff]
+line-length = 130
+select = ["E", "F", "I001"]
+src = ["src"]
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
